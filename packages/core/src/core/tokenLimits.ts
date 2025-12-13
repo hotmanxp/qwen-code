@@ -181,6 +181,8 @@ const PATTERNS: Array<[RegExp, TokenCount]> = [
   [/^gpt-oss.*$/, LIMITS['128k']],
   [/^llama-4-scout.*$/, LIMITS['10m']],
   [/^mistral-large-2.*$/, LIMITS['128k']],
+  // minimax-m2 200k
+  [/^minimax-m2$/i, LIMITS['200k']],
 ];
 
 /**
@@ -215,6 +217,8 @@ const OUTPUT_PATTERNS: Array<[RegExp, TokenCount]> = [
 
   // Deepseek-reasoner: 64k max tokens
   [/^deepseek-reasoner$/, LIMITS['64k']],
+  // minimax-m2 128k
+  [/^minimax-m2$/i, LIMITS['128k']],
 ];
 
 /**
